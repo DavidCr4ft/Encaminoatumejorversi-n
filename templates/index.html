@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salud y Ejercicio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #00bcd4, #4caf50);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: lighter;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #ff9800;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff5722;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .content-container div {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            width: 48%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-container div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .image {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Salud y Ejercicio</h1>
+        <p>Vive bien, siente bien y mantente saludable</p>
+    </header>
+
+    <nav>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#ejercicios">Ejercicios</a>
+        <a href="#nutricion">Nutrición</a>
+    </nav>
+
+    <section id="beneficios">
+        <h2>Beneficios del ejercicio</h2>
+        <p>Hacer ejercicio regularmente ofrece una variedad de beneficios tanto físicos como mentales. Aquí te compartimos algunos:</p>
+        <ul>
+            <li><strong>Mejora la salud cardiovascular</strong>: Mantiene el corazón fuerte y saludable.</li>
+            <li><strong>Reduce el estrés</strong>: El ejercicio es una excelente forma de liberar tensiones.</li>
+            <li><strong>Aumenta la energía</strong>: Te sentirás más activo y productivo durante el día.</li>
+            <li><strong>Fortalece tus huesos y músculos</strong>: Reduce el riesgo de fracturas y mejora la flexibilidad.</li>
+            <li><strong>Promueve una salud mental positiva</strong>: Ayuda a prevenir la ansiedad y la depresión.</li>
+        </ul>
+    </section>
+
+    <section id="ejercicios">
+        <h2>Ejercicios recomendados</h2>
+        <div class="content-container">
+            <div>
+                <h3>Cardio</h3>
+                <p>El ejercicio cardiovascular, como correr, nadar o andar en bicicleta, es excelente para mejorar la circulación sanguínea y la salud del corazón.</p>
+            </div>
+            <div>
+                <h3>Entrenamiento de fuerza</h3>
+                <p>Los entrenamientos con pesas o utilizando tu propio peso corporal, como flexiones y abdominales, son perfectos para tonificar y fortalecer tu cuerpo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nutricion">
+        <h2>Consejos de Nutrición</h2>
+        <p>Una alimentación balanceada es esencial para maximizar los resultados de tu ejercicio. Estos son algunos consejos:</p>
+        <ul>
+            <li><strong>Proteínas magras:</strong> Incluye alimentos como pescado, pollo, y tofu.</li>
+            <li><strong>Frutas y verduras:</strong> Son fuente de vitaminas y antioxidantes, esenciales para la recuperación muscular.</li>
+            <li><strong>Hidratarse bien:</strong> Bebe suficiente agua antes, durante y después del ejercicio.</li>
+            <li><strong>Evita azúcares refinados:</strong> Opta por carbohidratos complejos, como arroz integral y avena.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Inspiración para tu rutina de ejercicio</h2>
+        <img src="https://via.placeholder.com/800x500" alt="Ejercicio saludable" class="image">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Salud y Ejercicio | <a href="#">Política de privacidad</a></p>
+    </footer>
+
+</body>
+</html>
